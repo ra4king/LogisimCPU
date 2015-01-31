@@ -5,6 +5,10 @@ This file is intended to be loaded by Brandonsim.  Distributed as part of CS2110
     <tool name="Pin">
       <a name="tristate" val="false"/>
     </tool>
+    <tool name="Bit Extender">
+      <a name="in_width" val="4"/>
+      <a name="type" val="sign"/>
+    </tool>
   </lib>
   <lib desc="#Gates" name="1">
     <tool name="NOT Gate">
@@ -134,104 +138,118 @@ This file is intended to be loaded by Brandonsim.  Distributed as part of CS2110
     <wire from="(870,130)" to="(870,270)"/>
     <wire from="(690,130)" to="(810,130)"/>
     <wire from="(830,190)" to="(830,200)"/>
-    <wire from="(150,130)" to="(150,390)"/>
     <wire from="(240,200)" to="(240,210)"/>
-    <wire from="(150,390)" to="(270,390)"/>
+    <wire from="(150,430)" to="(270,430)"/>
     <wire from="(400,200)" to="(400,210)"/>
     <wire from="(480,260)" to="(480,280)"/>
-    <wire from="(860,300)" to="(860,330)"/>
     <wire from="(430,180)" to="(430,260)"/>
     <wire from="(380,130)" to="(490,130)"/>
-    <wire from="(690,390)" to="(860,390)"/>
+    <wire from="(690,430)" to="(860,430)"/>
     <wire from="(830,280)" to="(850,280)"/>
-    <wire from="(690,350)" to="(690,390)"/>
+    <wire from="(690,390)" to="(690,430)"/>
     <wire from="(220,130)" to="(380,130)"/>
     <wire from="(810,130)" to="(810,170)"/>
     <wire from="(660,250)" to="(680,250)"/>
+    <wire from="(950,290)" to="(950,330)"/>
+    <wire from="(1010,390)" to="(1010,430)"/>
+    <wire from="(1010,330)" to="(1010,370)"/>
     <wire from="(860,170)" to="(860,270)"/>
-    <wire from="(480,390)" to="(690,390)"/>
-    <wire from="(270,350)" to="(270,390)"/>
+    <wire from="(480,430)" to="(690,430)"/>
+    <wire from="(270,390)" to="(270,430)"/>
+    <wire from="(150,130)" to="(150,430)"/>
     <wire from="(420,180)" to="(430,180)"/>
     <wire from="(490,190)" to="(500,190)"/>
-    <wire from="(460,340)" to="(470,340)"/>
+    <wire from="(460,380)" to="(470,380)"/>
     <wire from="(260,180)" to="(270,180)"/>
     <wire from="(380,180)" to="(390,180)"/>
-    <wire from="(870,130)" to="(1000,130)"/>
     <wire from="(220,180)" to="(230,180)"/>
     <wire from="(490,130)" to="(490,180)"/>
-    <wire from="(690,270)" to="(690,330)"/>
+    <wire from="(960,180)" to="(970,180)"/>
+    <wire from="(950,330)" to="(960,330)"/>
     <wire from="(850,170)" to="(860,170)"/>
     <wire from="(810,170)" to="(820,170)"/>
-    <wire from="(840,340)" to="(850,340)"/>
+    <wire from="(840,380)" to="(850,380)"/>
     <wire from="(490,130)" to="(690,130)"/>
     <wire from="(670,260)" to="(670,270)"/>
     <wire from="(410,290)" to="(470,290)"/>
+    <wire from="(980,190)" to="(980,200)"/>
     <wire from="(840,290)" to="(840,300)"/>
     <wire from="(430,260)" to="(480,260)"/>
     <wire from="(810,130)" to="(870,130)"/>
     <wire from="(490,260)" to="(540,260)"/>
+    <wire from="(1010,170)" to="(1010,240)"/>
+    <wire from="(860,300)" to="(860,370)"/>
+    <wire from="(960,130)" to="(1150,130)"/>
     <wire from="(510,200)" to="(510,210)"/>
-    <wire from="(270,180)" to="(270,330)"/>
     <wire from="(490,260)" to="(490,280)"/>
-    <wire from="(480,310)" to="(480,330)"/>
     <wire from="(540,180)" to="(540,260)"/>
-    <wire from="(860,350)" to="(860,390)"/>
-    <wire from="(270,390)" to="(480,390)"/>
+    <wire from="(860,390)" to="(860,430)"/>
+    <wire from="(960,130)" to="(960,170)"/>
+    <wire from="(860,430)" to="(1010,430)"/>
+    <wire from="(270,430)" to="(480,430)"/>
+    <wire from="(870,130)" to="(960,130)"/>
     <wire from="(690,130)" to="(690,230)"/>
-    <wire from="(480,350)" to="(480,390)"/>
+    <wire from="(690,270)" to="(690,370)"/>
+    <wire from="(480,390)" to="(480,430)"/>
     <wire from="(220,130)" to="(220,180)"/>
     <wire from="(490,180)" to="(500,180)"/>
     <wire from="(380,190)" to="(390,190)"/>
-    <wire from="(860,390)" to="(990,390)"/>
     <wire from="(220,190)" to="(230,190)"/>
-    <wire from="(250,340)" to="(260,340)"/>
+    <wire from="(250,380)" to="(260,380)"/>
     <wire from="(380,130)" to="(380,180)"/>
     <wire from="(150,130)" to="(220,130)"/>
+    <wire from="(960,170)" to="(970,170)"/>
+    <wire from="(1000,170)" to="(1010,170)"/>
+    <wire from="(990,380)" to="(1000,380)"/>
+    <wire from="(1000,330)" to="(1010,330)"/>
     <wire from="(810,180)" to="(820,180)"/>
     <wire from="(840,290)" to="(850,290)"/>
     <wire from="(830,300)" to="(840,300)"/>
-    <wire from="(670,340)" to="(680,340)"/>
+    <wire from="(270,180)" to="(270,370)"/>
+    <wire from="(480,310)" to="(480,370)"/>
+    <wire from="(1010,430)" to="(1150,430)"/>
     <wire from="(670,240)" to="(680,240)"/>
     <wire from="(670,260)" to="(680,260)"/>
     <wire from="(660,230)" to="(670,230)"/>
     <wire from="(660,270)" to="(670,270)"/>
+    <wire from="(670,380)" to="(680,380)"/>
     <wire from="(530,180)" to="(540,180)"/>
     <comp lib="0" loc="(380,190)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="LdA"/>
-    </comp>
-    <comp lib="1" loc="(690,350)" name="Controlled Buffer">
-      <a name="facing" val="south"/>
-      <a name="width" val="16"/>
     </comp>
     <comp lib="0" loc="(410,290)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
       <a name="label" val="func"/>
     </comp>
-    <comp lib="0" loc="(670,340)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="DrREG"/>
+    <comp lib="0" loc="(1000,330)" name="Bit Extender">
+      <a name="in_width" val="5"/>
+      <a name="type" val="sign"/>
     </comp>
-    <comp lib="1" loc="(270,350)" name="Controlled Buffer">
-      <a name="facing" val="south"/>
-      <a name="width" val="16"/>
+    <comp lib="0" loc="(960,180)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="LdIR"/>
     </comp>
     <comp lib="0" loc="(490,190)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="LdB"/>
     </comp>
+    <comp lib="0" loc="(670,380)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="DrREG"/>
+    </comp>
     <comp lib="4" loc="(420,180)" name="Register">
       <a name="width" val="16"/>
       <a name="label" val="A"/>
     </comp>
-    <comp lib="0" loc="(840,340)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="DrMEM"/>
-    </comp>
     <comp lib="4" loc="(850,170)" name="Register">
       <a name="width" val="16"/>
       <a name="label" val="MAR"/>
+    </comp>
+    <comp lib="0" loc="(990,380)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="DrOFF"/>
     </comp>
     <comp lib="4" loc="(530,180)" name="Register">
       <a name="width" val="16"/>
@@ -262,29 +280,49 @@ This file is intended to be loaded by Brandonsim.  Distributed as part of CS2110
       <a name="width" val="16"/>
       <a name="label" val="PC"/>
     </comp>
+    <comp lib="1" loc="(1010,390)" name="Controlled Buffer">
+      <a name="facing" val="south"/>
+      <a name="width" val="16"/>
+    </comp>
     <comp lib="0" loc="(660,230)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="WrREG"/>
-    </comp>
-    <comp lib="0" loc="(250,340)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="DrPC"/>
     </comp>
     <comp lib="0" loc="(510,210)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="CLK"/>
     </comp>
+    <comp lib="1" loc="(860,390)" name="Controlled Buffer">
+      <a name="facing" val="south"/>
+      <a name="width" val="16"/>
+    </comp>
     <comp lib="0" loc="(240,210)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="4" loc="(1000,170)" name="Register">
+      <a name="width" val="16"/>
+      <a name="label" val="IR"/>
     </comp>
     <comp lib="0" loc="(660,270)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="CLK"/>
     </comp>
+    <comp lib="0" loc="(840,380)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="DrMEM"/>
+    </comp>
     <comp loc="(690,230)" name="Registers">
       <a name="label" val="Registers"/>
       <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(250,380)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="DrPC"/>
+    </comp>
+    <comp lib="0" loc="(460,380)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="DrALU"/>
     </comp>
     <comp loc="(860,270)" name="RAM">
       <a name="label" val="RAM"/>
@@ -294,21 +332,25 @@ This file is intended to be loaded by Brandonsim.  Distributed as part of CS2110
       <a name="facing" val="east"/>
       <a name="label" val="WrMEM"/>
     </comp>
-    <comp lib="1" loc="(860,350)" name="Controlled Buffer">
+    <comp lib="0" loc="(980,200)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="1" loc="(480,390)" name="Controlled Buffer">
       <a name="facing" val="south"/>
       <a name="width" val="16"/>
-    </comp>
-    <comp lib="1" loc="(480,350)" name="Controlled Buffer">
-      <a name="facing" val="south"/>
-      <a name="width" val="16"/>
-    </comp>
-    <comp lib="0" loc="(460,340)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="DrALU"/>
     </comp>
     <comp lib="0" loc="(220,190)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="LdPC"/>
+    </comp>
+    <comp lib="1" loc="(690,390)" name="Controlled Buffer">
+      <a name="facing" val="south"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="1" loc="(270,390)" name="Controlled Buffer">
+      <a name="facing" val="south"/>
+      <a name="width" val="16"/>
     </comp>
     <comp lib="0" loc="(830,200)" name="Tunnel">
       <a name="facing" val="north"/>
