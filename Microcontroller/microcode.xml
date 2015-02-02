@@ -131,19 +131,22 @@
 		<Signal name="ALUHi" />
 		<Signal name="DrALU" />
 		<Signal name="LdZ" />
+		<Goto state="BEQ3" />
+	</State>
+	<State name="BEQ3">
 		<Signal name="chkZ" />
 	</State>
-	<State name="BEQ3" onZ="true">
+	<State name="BEQ4" onZ="true">
 		<Signal name="DrPC" />
 		<Signal name="LdA" />
-		<Goto state="BEQ4" />
-	</State>
-	<State name="BEQ4">
-		<Signal name="DrOFF" />
-		<Signal name="LdB" />
 		<Goto state="BEQ5" />
 	</State>
 	<State name="BEQ5">
+		<Signal name="DrOFF" />
+		<Signal name="LdB" />
+		<Goto state="BEQ6" />
+	</State>
+	<State name="BEQ6">
 		<Signal name="DrALU" />
 		<Signal name="LdPC" />
 		<Goto state="FETCH0" />
