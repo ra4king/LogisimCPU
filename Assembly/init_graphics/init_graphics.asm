@@ -41,5 +41,5 @@ finish2:	la $t0, start
 gmem:		.word 0xFFC0
 gclear:		.word 0xFFBF
 gsize:		.word 0x40
-; data1:		.word 0xAAAA
+data1:		.word 0xAAAA
 data2:		.word 0x5555
