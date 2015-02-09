@@ -1,0 +1,10 @@
+*.hex
+*.sym
+*.bin
+*.jar
+*.txt
+*.pdf
+*.py
+example.xml
+README
+

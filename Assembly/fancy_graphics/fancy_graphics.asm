@@ -33,6 +33,14 @@ start:		la $t0, gclear
 			jalr $at, $ra
 			add $s2, $zero, $v0
 			
+			lw $t0, 0x0($sp)
+			addi $sp, $sp, 1
+			add $s1, $s1, $t0
+			
+			lw $t0, 0x0($sp)
+			addi $sp, $sp, 1
+			add $s2, $s2, $t0
+			
 			lw $t2, 0x0($sp)
 			addi $sp, $sp, 1
 			
@@ -74,7 +82,23 @@ finish:		add $t2, $t2, $a1
 			la $at, start
 			jalr $at, $zero
 			
-rightShift:	la $t0, x2
+rightShift:	la $t0, x1
+			lw $t1, 0x0($t0)
+			
+			addi $sp, $sp, -1
+			
+			nand $t2, $a0, $t1
+			nand $t2, $t2, $t2
+			beq $t2, $t1, rsOverflow
+			
+			sw $zero, 0x0($sp)
+			beq $zero, $zero, rsStart
+			
+rsOverflow:	la $t0, x8000
+			lw $t1, 0x0($t0)
+			sw $t1, 0x0($sp)
+			
+rsStart:	la $t0, x2
 			lw $t1, 0x0($t0)
 			add $v0, $zero, $zero
 			
@@ -124,5 +148,5 @@ x2:			.word 0x2
 			.word 0x1000
 			.word 0x2000
 			.word 0x4000
-			.word 0x8000
+x8000:		.word 0x8000
 			.word 0x0000
