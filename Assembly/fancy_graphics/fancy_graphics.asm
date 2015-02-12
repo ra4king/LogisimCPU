@@ -21,29 +21,6 @@ start:		la $t0, gclear
 			lw $t0, 0x0($t0)
 			sw $zero, 0x0($t0)
 			
-			addi $sp, $sp, -1
-			sw $t2, 0x0($sp)
-			
-			la $at, rightShift
-			add $a0, $zero, $s1
-			jalr $at, $ra
-			add $s1, $zero, $v0
-			
-			add $a0, $zero, $s2
-			jalr $at, $ra
-			add $s2, $zero, $v0
-			
-			lw $t0, 0x0($sp)
-			addi $sp, $sp, 1
-			add $s1, $s1, $t0
-			
-			lw $t0, 0x0($sp)
-			addi $sp, $sp, 1
-			add $s2, $s2, $t0
-			
-			lw $t2, 0x0($sp)
-			addi $sp, $sp, 1
-			
 			la $t0, squarepos
 			lw $t0, 0x0($t0)
 			add $t0, $t0, $t2
@@ -74,6 +51,29 @@ loop:		beq $t0, $t1, finish
 			beq $zero, $zero, loop
 			
 finish:		add $t2, $t2, $a1
+
+			addi $sp, $sp, -1
+			sw $t2, 0x0($sp)
+			
+			la $at, rightShift
+			add $a0, $zero, $s1
+			jalr $at, $ra
+			add $s1, $zero, $v0
+			
+			add $a0, $zero, $s2
+			jalr $at, $ra
+			add $s2, $zero, $v0
+			
+			lw $t0, 0x0($sp)
+			addi $sp, $sp, 1
+			add $s1, $s1, $t0
+			
+			lw $t0, 0x0($sp)
+			addi $sp, $sp, 1
+			add $s2, $s2, $t0
+			
+			lw $t2, 0x0($sp)
+			addi $sp, $sp, 1
 			
 			la $t0, gflip
 			lw $t0, 0x0($t0)
