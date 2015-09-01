@@ -1,0 +1,12 @@
+For project 1, we have given you a new option on the lc2200-16 assembler.
+
+    python lc220016-as --logisim myFile.s
+    
+This option will tell the script to print out a logisim compatible version of
+your compiled code into a separate file.
+
+To load this logisim compatible version of your assembled program, open the
+new 'myFile.hex' file in a text editor, copy the contents, and paste
+it into the logisim RAM unit (that you used to implement the memory) at address
+0 (a black box will be around the top left entry of memory). To paste, simply
+ctrl-v.
